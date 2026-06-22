@@ -16,9 +16,13 @@ belegt (Details in VERIFICATION.md ab M3).
 - [x] alle grün — Baseline exakt getroffen, Parser unangetastet (8 passed)
 
 ## M2 — L3 State-MCP-Server + Disziplin-Prompt
-- [ ] `store/` FastMCP-Server: sessions(+board_id)/steps/known_failures (SQLite)
-- [ ] `prompts/diagnosis_system_prompt.md`
-- [ ] Unit-Tests (CRUD, board_id-Filter, Persistenz über Neustart); Tool-Call nachweislich
+- [x] `store/db.py` reine SQLite-Schicht + `store/server.py` FastMCP-Server
+  - sessions: board_id, status (open|resolved|abandoned), outcome, symptom
+  - steps: evidence (measured|injected|assumed), confidence %, net + designator (eigene Spalten)
+  - known_failures: source (distilled|manual), source_session_id (FK)
+- [x] `prompts/diagnosis_system_prompt.md` (§4 wörtlich + §2 Reliability-Gradient als Regeln)
+- [x] Unit-Tests (CRUD, board_id-Filter, Enum-/Range-Guards, CHECK-Constraints, Persistenz über Neustart)
+- [x] In-Memory-FastMCP-Client: Server beantwortet Tool-Calls nachweislich (25 passed)
 
 ## M3 — Weg A (Claude Desktop)
 - [ ] `desktop/` Connector-Config + Setup-Doku; `README.md` vollständig
