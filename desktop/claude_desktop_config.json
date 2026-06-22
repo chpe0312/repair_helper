@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "boardview-mcp": {
+      "command": "C:\\Users\\chris\\reair_assist\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\chris\\reair_assist\\boardview_mcp.py",
+        "C:\\Users\\chris\\reair_assist\\boards",
+        "--board",
+        "A1708"
+      ]
+    },
+    "boardrepair-state": {
+      "command": "C:\\Users\\chris\\reair_assist\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\chris\\reair_assist\\store\\server.py"
+      ],
+      "env": {
+        "BOARDREPAIR_DB": "C:\\Users\\chris\\reair_assist\\store\\state.sqlite"
+      }
+    }
+  }
+}

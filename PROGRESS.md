@@ -24,10 +24,13 @@ belegt (Details in VERIFICATION.md ab M3).
 - [x] Unit-Tests (CRUD, board_id-Filter, Enum-/Range-Guards, CHECK-Constraints, Persistenz über Neustart)
 - [x] In-Memory-FastMCP-Client: Server beantwortet Tool-Calls nachweislich (25 passed)
 
-## M3 — Weg A (Claude Desktop)
-- [ ] `desktop/` Connector-Config + Setup-Doku; `README.md` vollständig
-- [ ] beide MCP-Server starten + beantworten je einen Tool-Call
-- [ ] `VERIFICATION.md` (Kern + Weg A)
+## M3 — Weg A (Claude Desktop) — fertig & einsetzbar
+- [x] Prompt um operativen Tool-Ablauf erweitert (Start/Mess-Schleife/Abschluss)
+- [x] `desktop/claude_desktop_config.json` (absolute venv-Python-/Skript-/boards-/SQLite-Pfade)
+- [x] `desktop/SETUP.md` (Connector, Project-Anlage, Begründung absolute Pfade, Bench-Checkliste)
+- [x] `README.md` vollständig (beide Server, Weg A)
+- [x] beide MCP-Server starten + beantworten je einen Tool-Call (In-Memory-Client + stdio-Boot)
+- [x] `VERIFICATION.md` (Kern + Weg A, §8) mit ausgeführten Commands — 26 passed
 
 ## M4 — Weg B Standalone (LATER, nur auf Freigabe)
 ## M5 — Schematic L2 (LATER, nur auf Freigabe)
