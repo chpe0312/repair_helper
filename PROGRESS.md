@@ -12,8 +12,8 @@ belegt (Details in VERIFICATION.md ab M3).
 - [x] echte `.brd` lädt; `pytest` grün (Smoke)
 
 ## M1 — L1 härten + Baseline-Tests
-- [ ] `tests/test_boardview.py` mit exakten Ground-Truth-Assertions
-- [ ] alle grün (sonst STOPP + Ist-Werte zeigen)
+- [x] `tests/test_boardview.py` mit exakten Ground-Truth-Assertions
+- [x] alle grün — Baseline exakt getroffen, Parser unangetastet (8 passed)
 
 ## M2 — L3 State-MCP-Server + Disziplin-Prompt
 - [ ] `store/` FastMCP-Server: sessions(+board_id)/steps/known_failures (SQLite)
