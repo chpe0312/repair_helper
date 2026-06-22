@@ -1,0 +1,4 @@
+# Board-Repair Diagnose-Assistent — gepinnte Laufzeit-/Test-Deps (M0–M3).
+# Python >= 3.10. M4/M5-Extras (vLLM/colpali) bewusst NICHT hier — kommen später.
+fastmcp==3.4.2
+pytest==9.1.1
